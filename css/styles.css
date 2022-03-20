@@ -1,0 +1,137 @@
+body {
+    font-size: 16px;
+    color: black;
+    background-color: rgb(241, 255, 240);
+}
+#header-nav {
+    background-color: grey;
+    border-radius: 0;
+    border: 0;
+       
+}
+/* Texto de Cabecera */
+
+.navbar-header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.navbar-header a:hover, .navbar-header a:focus {
+    color: red;
+    text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+/* Fin de Cabecera */
+
+/* Inicio de Cuerpo */
+
+#OMe {
+    margin: 5px;
+    text-align: center;
+}
+
+#home-tiles div a:hover, #home-tiles div a:focus {
+    color: red;
+    text-decoration: none;
+}
+
+#Chicken-tile, #Beef-tile, #Sushi-tile {
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+
+
+#home-tiles div p{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#box1, #box2, #box3 {
+    
+    border: 1px solid black;
+    float: left;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    #box1, #box2, #box3 {
+    
+        width: 31.333333333%;
+        margin: 1%;
+    }
+    #nav-list {
+        display: none;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+#box1, #box2 {
+    
+    width: 48%;
+    margin: 1%;
+}
+#box3 {
+    
+    width: 98%;
+    margin: 1%;
+}
+#nav-list {
+    display: none;
+}
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    #box1, #box2 {
+    
+        width: 48%;
+        margin: 1%;
+    }
+    #box3 {
+        
+        width: 98%;
+        margin: 1%;
+    }
+    #nav-list {
+        display: none;
+    }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #box1, #box2, #box3 {
+    
+    width: 98%;
+    margin: 1%;
+}
+#nav-list a {
+    text-align: center;
+    color: blueviolet;
+}
+
+#nav-list a:hover {
+    color: azure;
+    background-color: yellowgreen;
+}
+
+  /* End Header */
+}
